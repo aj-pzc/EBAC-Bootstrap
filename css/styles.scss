@@ -1,0 +1,108 @@
+@import 'palette';
+@import 'variables';
+@import 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    @include box-style(1rem 1.5rem, 0);
+    
+    &-brand {
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+    
+    &-nav {
+        align-items: center;
+    }
+}
+
+.nav-link {
+    @include link-hover();
+    font-weight: 600 !important;
+    font-size: 1.3rem !important; 
+    margin-left: 1.5rem !important;
+}
+
+.navbar .icon-link {
+    @include link-hover();
+    @include animated-icon();
+    font-weight: 600 !important;
+    font-size: 1.3rem !important;
+    margin-left: 1.5rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+}
+
+.container {
+    @include box-style(2rem, 8px);
+    margin: 0;
+}
+
+.col {
+    @include flex-center();
+    margin-top: 2rem;
+    padding-top: 100px;
+}
+
+#content-row {
+    @include box-style(0, 8px);
+    flex-direction: column;
+}
+
+#info{
+    padding: 1rem 3rem;
+    
+    display: block;
+    box-sizing: border-box;
+    
+    h2 {
+        text-align: center; 
+        margin-bottom: 2rem;
+    }
+    
+    p {
+        text-align: left; 
+        margin-bottom: 1rem;
+        line-height: 1.6;
+        padding: 0; 
+        margin-left: 0; 
+    }
+}
+
+.carousel-caption {
+    border-radius: 5px !important;
+    padding: 0.5rem 1rem !important;
+}
+
+#tutoriales {
+    @include box-style(2rem, 8px);
+}
+
+#comments {
+    @include box-style(0, 8px, $secondary);
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.comments-section {
+    @include box-style(1rem, 8px, $comment-bg);
+    width: 100%;
+    margin-top: .9rem !important;
+}
+
+.updates{
+    font-size: 1rem !important;
+   font-weight: 500 !important;
+}
+
+.accordion-body, .accordion-button {
+    font-size: 1rem !important;
+   font-weight: 500 !important;
+}

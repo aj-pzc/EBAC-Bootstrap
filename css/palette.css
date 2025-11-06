@@ -1,0 +1,20 @@
+.navbar {
+  color: rgb(0, 0, 0) !important;
+  background-color: rgb(198, 229, 248) !important;
+}
+.navbar:hover {
+  color: rgb(118, 115, 115) !important;
+}
+
+body {
+  background-color: rgb(235, 247, 254) !important;
+}
+
+.container {
+  background-color: rgba(219, 250, 255, 0.327) !important;
+  border-radius: 10px !important;
+}
+
+.carousel-caption {
+  background-color: rgba(3, 15, 52, 0.282) !important;
+}/*# sourceMappingURL=palette.css.map */

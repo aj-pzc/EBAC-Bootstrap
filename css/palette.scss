@@ -1,0 +1,28 @@
+@import'variables';
+
+.navbar{
+    color: $text-color !important;
+    background-color: $background !important;
+    &:hover {
+        color: $active !important;
+    }
+}
+
+body{
+    background-color: $primary !important;
+}
+
+.container {
+    background-color: $secondary !important;
+    border-radius: $border !important;
+}
+
+.carousel-caption {
+    background-color: $banner !important;
+}
+
+
+
+
+
+

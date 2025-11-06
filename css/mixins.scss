@@ -1,0 +1,48 @@
+// ==================== MIXINS ====================
+
+// Mixin para transiciones suaves
+@mixin smooth-transition($duration: 0.3s, $property: all) {
+    transition: #{$property} #{$duration} ease !important;
+}
+
+// Mixin para hover de links
+@mixin link-hover($normal-color: rgb(0, 0, 0), $hover-color: #767373) {
+    color: #{$normal-color} !important;
+    text-decoration: none !important;
+    @include smooth-transition();
+    
+    &:hover {
+        color: #{$hover-color} !important;
+        text-decoration: none !important;
+    }
+}
+
+// Mixin para centrado flexbox
+@mixin flex-center($direction: column) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: #{$direction};
+}
+
+// Mixin para bordes redondeados con padding
+@mixin box-style($padding: 2rem, $radius: 8px, $bg-color: null) {
+    padding: #{$padding};
+    border-radius: #{$radius};
+    @if $bg-color {
+        background-color: #{$bg-color};
+    }
+}
+
+// Mixin para iconos con animación
+@mixin animated-icon($size: 1rem, $move-distance: 0.25rem) {
+    .bi {
+        width: #{$size} !important;
+        height: #{$size} !important;
+        @include smooth-transition(0.3s, transform);
+    }
+    
+    &:hover .bi {
+        transform: translateX(#{$move-distance}) !important;
+    }
+}

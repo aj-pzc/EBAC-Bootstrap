@@ -1,0 +1,149 @@
+.navbar {
+  color: rgb(0, 0, 0) !important;
+  background-color: rgb(198, 229, 248) !important;
+}
+.navbar:hover {
+  color: rgb(118, 115, 115) !important;
+}
+
+body {
+  background-color: rgb(235, 247, 254) !important;
+}
+
+.container {
+  background-color: rgba(219, 250, 255, 0.327) !important;
+  border-radius: 10px !important;
+}
+
+.carousel-caption {
+  background-color: rgba(3, 15, 52, 0.282) !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 1rem 1.5rem;
+  border-radius: 0;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.navbar-nav {
+  align-items: center;
+}
+
+.nav-link {
+  color: rgb(0, 0, 0) !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  font-weight: 600 !important;
+  font-size: 1.3rem !important;
+  margin-left: 1.5rem !important;
+}
+.nav-link:hover {
+  color: #767373 !important;
+  text-decoration: none !important;
+}
+
+.navbar .icon-link {
+  color: rgb(0, 0, 0) !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  font-weight: 600 !important;
+  font-size: 1.3rem !important;
+  margin-left: 1.5rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+.navbar .icon-link:hover {
+  color: #767373 !important;
+  text-decoration: none !important;
+}
+.navbar .icon-link .bi {
+  width: 1rem !important;
+  height: 1rem !important;
+  transition: transform 0.3s ease !important;
+}
+.navbar .icon-link:hover .bi {
+  transform: translateX(0.25rem) !important;
+}
+
+.container {
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  padding-top: 100px;
+}
+
+#content-row {
+  padding: 0;
+  border-radius: 8px;
+  flex-direction: column;
+}
+
+#info {
+  padding: 1rem 3rem;
+  display: block;
+  box-sizing: border-box;
+}
+#info h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#info p {
+  text-align: left;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  padding: 0;
+  margin-left: 0;
+}
+
+.carousel-caption {
+  border-radius: 5px !important;
+  padding: 0.5rem 1rem !important;
+}
+
+#tutoriales {
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+#comments {
+  padding: 0;
+  border-radius: 8px;
+  background-color: rgba(219, 250, 255, 0.327);
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.comments-section {
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  margin-top: 0.9rem !important;
+}
+
+.updates {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+}
+
+.accordion-body, .accordion-button {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+}/*# sourceMappingURL=styles.css.map */
